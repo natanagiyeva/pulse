@@ -1,0 +1,11 @@
+.consult {
+    min-height: 680px;
+    padding: 90px 0;
+    background: url(../img/bg_02.png) center (center/cover) no-repeat;
+
+    &__descr {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
