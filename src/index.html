@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-<div class="promo">
+<section class="promo">
     <div class="container">
         <header class="header">
             <a href="#" class="header__logo">
@@ -58,9 +59,9 @@
         </div>
         
     </div>
-</div>
+</section>
 
-<div class="benefit">
+<section class="benefit">
     <div class="container">
         <div class="title">НАШИ ПРЕИМУЩЕСТВА</div>
         
@@ -88,29 +89,49 @@
         </div>
 
     </div>
-</div>
+</section>
 
-    <div class="consult">
-        <div class="container">
-            <h2 class="title title_left">Получите бесплатную консультацию<br>
-                по подбору пульсометра</h2>
-            <div class="consult__descr">
-                Просто заполните форму заявки<br>
-                и мы перезвоним вам в течении 10 минут
-            </div>
-
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Your name" type="text">
-                <input name="phone" required placeholder="Your phone" type="number">
-                <input name="email" required placeholder="Your e-mail" type="email">
-
-                <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
-
-            </form>
+<section class="consult">
+    <div class="container">
+        <h2 class="title title_left">Получите бесплатную консультацию<br>
+            по подбору пульсометра</h2>
+        <div class="consult__descr">
+            Просто заполните форму заявки<br>
+            и мы перезвоним вам в течении 10 минут
         </div>
-    </div>
 
-    <script src="js/script.js"></script>
+        <form class="feed-form" action="#">
+            <input name="name" required placeholder="Your name" type="text">
+            <input name="phone" required placeholder="Your phone" type="number">
+            <input name="email" required placeholder="Your e-mail" type="email">
+
+            <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+
+        </form>
+    </div>
+</section>
+
+<section class="carousel">
+    <div class="container">
+        <div class="carousel__inner">
+            <div>
+                <img src="img/slide_01.jpg" alt="slide">
+            </div>
+            <div>
+                <img src="img/slide_02.jpg" alt="slide">
+            </div>
+            <div>
+                <img src="img/slide_03.jpg" alt="slide">
+            </div>
+          </div>
+    </div>
+</section>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
