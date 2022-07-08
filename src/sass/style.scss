@@ -10,15 +10,22 @@
     margin: 0 auto;
 }
 
+.carousel-control-next,
+.carousel-control-prev, .carousel-indicators {
+    filter: invert(100%);
+}
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/benefit';
-@import 'blocks/media';
 @import 'blocks/titles';
 @import 'blocks/consult';
-@import 'blocks/forms';
 @import 'blocks/carousel';
+@import 'blocks/forms';
 @import 'blocks/catalog';
 @import 'blocks/review';
 @import 'blocks/footer';
+@import 'blocks/modal';
+
+@import 'blocks/media';

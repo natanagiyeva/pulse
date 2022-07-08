@@ -35,6 +35,17 @@
             font-size: 12px;
         }
     }
+
+    .catalog {
+        &__content {
+            &_active {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+           }
+        }
+    }
+    
 }
 
 @media (max-width: 650px) {
@@ -54,6 +65,32 @@
             width: 100%;
             margin-top: 30px;
             padding: 0 100px;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+
+    .review {
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 370px;
+            height: 250px;
+            padding: 20px;
         }
     }
 }
@@ -84,6 +121,36 @@
 
         &__item {
             padding: 0 50px;
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 28px;
+        }
+    }
+
+    .consult {
+        &__descr {
+            font-size: 18px;
+        }
+    }
+
+    .review {
+        &__item {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__photo {
+            padding-right: 0;
+        }
+
+        &__content {
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 20px;
         }
     }
 }
@@ -133,6 +200,23 @@
     .button {
         &__main {
             margin-top: 40px;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 100%;
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+
+        &__tab {
+            width: 90%;
+            margin-bottom: 15px;
         }
     }
 }
