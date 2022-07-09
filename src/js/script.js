@@ -38,13 +38,13 @@ $(document).ready(function(){
 
       //Modal
 
-      $('[data-modal=consultation]').on('click', function() {
-            $('.overlay, #consultation').fadeIn('slow');
+      $('[data-modal=consult]').on('click', function() {
+            $('.overlay, #consult').fadeIn('slow');
     
         });
 
         $('.modal1__close').on('click', function() {
-            $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+            $('.overlay, #consult, #thanks, #order').fadeOut('slow');
         });
 
 
@@ -55,5 +55,36 @@ $(document).ready(function(){
             });
         });
 
+// validate
+    function valideForm(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "pleace enter your name",
+                    minlength: jQuery.validator.format("Entered {0} symbol!")
+                },
+                phone: "pleace enter your phone",
+                email: {
+                    required: "pleace enter your email",
+                    email: "email address entered incorrectly"
+                }
+            }
+        });
+    };
+
+    valideForm('#consult-form');
+    valideForm('#consult form');
+    valideForm('#order form');
 
   });
